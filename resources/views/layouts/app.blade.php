@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    <img src="{{ asset('images/logo.png') }}" width="130px"/>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -80,9 +80,15 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4" style="min-height: 80vh">
             @yield('content')
         </main>
+        <div class="bg-white text-dark d-flex justify-content-center align-items-center" style="height: 20vh">
+            <div class="text-center">
+                <p class="text-center">&copy FoodApp {{Now()->year}}</p>
+                <p class="text-center">Rafiu Olakunle Moshood</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

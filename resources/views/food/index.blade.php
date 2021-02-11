@@ -14,7 +14,7 @@
                         </span>
                     </div>
                     <div class="card-body">
-                        <table class="table">
+                        <table class="table table-responsive">
                             <thead>
                                 <th>Image</th>
                                 <th>Name</th>
